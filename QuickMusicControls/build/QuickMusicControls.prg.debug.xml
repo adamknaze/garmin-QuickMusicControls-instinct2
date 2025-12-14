@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\devel\garmin\QuickMusicControls\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="1" lineNum="7" parent="globals/MusicControlDelegate" pc="268435457" symbol="&lt;init&gt;"/>
+<entry filename="c:\\devel\\garmin\\QuickMusicControls\\build\\gen\\006-B3888-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435476" symbol="&lt;init&gt;"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="3" lineNum="98" parent="globals/CommListener" pc="268435500" symbol="&lt;init&gt;"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="4" lineNum="5" parent="globals/MusicControlView" pc="268435519" symbol="&lt;init&gt;"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="5" lineNum="4" parent="globals/QuickMusicControlsApp" pc="268435538" symbol="&lt;init&gt;"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="6" lineNum="91" parent="globals/MusicControlDelegate" pc="268435557" symbol="sendToMobile"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="6" lineNum="92" parent="globals/MusicControlDelegate" pc="268435561" symbol="sendToMobile"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="6" lineNum="93" parent="globals/MusicControlDelegate" pc="268435579" symbol="sendToMobile"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="67" parent="globals/MusicControlDelegate" pc="268435621" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="68" parent="globals/MusicControlDelegate" pc="268435625" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="70" parent="globals/MusicControlDelegate" pc="268435638" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="71" parent="globals/MusicControlDelegate" pc="268435649" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="72" parent="globals/MusicControlDelegate" pc="268435662" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="73" parent="globals/MusicControlDelegate" pc="268435688" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="75" parent="globals/MusicControlDelegate" pc="268435697" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="77" parent="globals/MusicControlDelegate" pc="268435708" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="80" parent="globals/MusicControlDelegate" pc="268435725" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="82" parent="globals/MusicControlDelegate" pc="268435744" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="86" parent="globals/MusicControlDelegate" pc="268435761" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="7" lineNum="88" parent="globals/MusicControlDelegate" pc="268435764" symbol="onKeyReleased"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="8" lineNum="14" parent="globals/MusicControlDelegate" pc="268435767" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="8" lineNum="15" parent="globals/MusicControlDelegate" pc="268435769" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="8" lineNum="17" parent="globals/MusicControlDelegate" pc="268435787" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="8" lineNum="18" parent="globals/MusicControlDelegate" pc="268435797" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="8" lineNum="20" parent="globals/MusicControlDelegate" pc="268435806" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="9" lineNum="23" parent="globals/MusicControlDelegate" pc="268435834" symbol="getMode"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="9" lineNum="24" parent="globals/MusicControlDelegate" pc="268435836" symbol="getMode"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="27" parent="globals/MusicControlDelegate" pc="268435845" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="28" parent="globals/MusicControlDelegate" pc="268435849" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="29" parent="globals/MusicControlDelegate" pc="268435862" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="33" parent="globals/MusicControlDelegate" pc="268435865" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="34" parent="globals/MusicControlDelegate" pc="268435876" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="35" parent="globals/MusicControlDelegate" pc="268435888" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="38" parent="globals/MusicControlDelegate" pc="268435911" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="41" parent="globals/MusicControlDelegate" pc="268435914" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="43" parent="globals/MusicControlDelegate" pc="268435926" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="44" parent="globals/MusicControlDelegate" pc="268435937" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="45" parent="globals/MusicControlDelegate" pc="268435947" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="46" parent="globals/MusicControlDelegate" pc="268435958" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="51" parent="globals/MusicControlDelegate" pc="268435968" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="52" parent="globals/MusicControlDelegate" pc="268435979" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="53" parent="globals/MusicControlDelegate" pc="268435989" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="54" parent="globals/MusicControlDelegate" pc="268436000" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="58" parent="globals/MusicControlDelegate" pc="268436007" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="59" parent="globals/MusicControlDelegate" pc="268436014" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="61" parent="globals/MusicControlDelegate" pc="268436028" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlDelegate.mc" id="10" lineNum="64" parent="globals/MusicControlDelegate" pc="268436031" symbol="onKeyPressed"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="14" lineNum="59" parent="globals/MusicControlView" pc="268436034" symbol="drawPlayIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="14" lineNum="60" parent="globals/MusicControlView" pc="268436038" symbol="drawPlayIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="14" lineNum="61" parent="globals/MusicControlView" pc="268436041" symbol="drawPlayIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="14" lineNum="62" parent="globals/MusicControlView" pc="268436047" symbol="drawPlayIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="14" lineNum="69" parent="globals/MusicControlView" pc="268436181" symbol="drawPlayIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="14" lineNum="75" parent="globals/MusicControlView" pc="268436321" symbol="drawPlayIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="15" lineNum="78" parent="globals/MusicControlView" pc="268436336" symbol="drawPauseIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="15" lineNum="79" parent="globals/MusicControlView" pc="268436338" symbol="drawPauseIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="15" lineNum="80" parent="globals/MusicControlView" pc="268436361" symbol="drawPauseIcon"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="16" lineNum="7" parent="globals/MusicControlView" pc="268436391" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="16" lineNum="8" parent="globals/MusicControlView" pc="268436393" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="11" parent="globals/MusicControlView" pc="268436412" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="12" parent="globals/MusicControlView" pc="268436416" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="13" parent="globals/MusicControlView" pc="268436438" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="14" parent="globals/MusicControlView" pc="268436450" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="16" parent="globals/MusicControlView" pc="268436472" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="17" parent="globals/MusicControlView" pc="268436485" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="19" parent="globals/MusicControlView" pc="268436498" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="20" parent="globals/MusicControlView" pc="268436515" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="21" parent="globals/MusicControlView" pc="268436528" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="24" parent="globals/MusicControlView" pc="268436553" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="25" parent="globals/MusicControlView" pc="268436573" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="26" parent="globals/MusicControlView" pc="268436610" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="29" parent="globals/MusicControlView" pc="268436644" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="30" parent="globals/MusicControlView" pc="268436678" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="31" parent="globals/MusicControlView" pc="268436710" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="34" parent="globals/MusicControlView" pc="268436742" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="44" parent="globals/MusicControlView" pc="268436777" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="46" parent="globals/MusicControlView" pc="268436783" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="47" parent="globals/MusicControlView" pc="268436829" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="48" parent="globals/MusicControlView" pc="268436869" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="49" parent="globals/MusicControlView" pc="268436909" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="50" parent="globals/MusicControlView" pc="268436949" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="51" parent="globals/MusicControlView" pc="268436983" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="54" parent="globals/MusicControlView" pc="268437018" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlView.mc" id="17" lineNum="55" parent="globals/MusicControlView" pc="268437064" symbol="onUpdate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="18" lineNum="14" parent="globals/QuickMusicControlsApp" pc="268437105" symbol="getInitialView"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="18" lineNum="16" parent="globals/QuickMusicControlsApp" pc="268437107" symbol="getInitialView"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="20" lineNum="9" parent="globals/QuickMusicControlsApp" pc="268437174" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="20" lineNum="10" parent="globals/QuickMusicControlsApp" pc="268437176" symbol="initialize"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="21" lineNum="23" parent="globals/QuickMusicControlsApp" pc="268437195" symbol="getDelegate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="21" lineNum="24" parent="globals/QuickMusicControlsApp" pc="268437197" symbol="getDelegate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="22" lineNum="19" parent="globals/QuickMusicControlsApp" pc="268437206" symbol="setDelegate"/>
+<entry filename="C:\\devel\\garmin\\QuickMusicControls\\source\\MusicControlApp.mc" id="22" lineNum="20" parent="globals/QuickMusicControlsApp" pc="268437208" symbol="setDelegate"/>
+<entry filename="c:\\devel\\garmin\\QuickMusicControls\\build\\gen\\006-B3888-00\\source\\Rez.mcgen" id="23" lineNum="14" parent="globals/Rez/Layouts" pc="268437219" symbol="MainLayout"/>
+<entry filename="c:\\devel\\garmin\\QuickMusicControls\\build\\gen\\006-B3888-00\\source\\Rez.mcgen" id="23" lineNum="15" parent="globals/Rez/Layouts" pc="268437231" symbol="MainLayout"/>
+<entry filename="c:\\devel\\garmin\\QuickMusicControls\\build\\gen\\006-B3888-00\\source\\Rez.mcgen" id="23" lineNum="16" parent="globals/Rez/Layouts" pc="268437336" symbol="MainLayout"/>
+<entry filename="c:\\devel\\garmin\\QuickMusicControls\\build\\gen\\006-B3888-00\\source\\Rez.mcgen" id="23" lineNum="18" parent="globals/Rez/Layouts" pc="268437400" symbol="MainLayout"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="21" method="true" symbol="MainLayout"/>
+<entry id="15" method="true" symbol="drawPauseIcon"/>
+<entry id="8391211" method="true" symbol="onMessage"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8389554" method="true" symbol="onKeyReleased"/>
+<entry field="true" id="22" symbol="AppName"/>
+<entry id="5" module="true" symbol="globals/Rez/Strings"/>
+<entry id="9" object="true" symbol="QuickMusicControlsApp"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="20" symbol="id_monkey"/>
+<entry id="18" method="true" symbol="getDelegate"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8389553" method="true" symbol="onKeyPressed"/>
+<entry id="13" method="true" symbol="sendToMobile"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="16" method="true" symbol="drawPlayIcon"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8388828" method="true" symbol="onError"/>
+<entry id="8" object="true" symbol="MusicControlView"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="10" method="true" symbol="getMode"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="19" symbol="LauncherIcon"/>
+<entry id="6" object="true" symbol="CommListener"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="11" symbol="&lt;globals/MusicControlDelegate/&lt;&gt;gpsPressStartTime&gt;"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry field="true" id="17" symbol="&lt;globals/QuickMusicControlsApp/&lt;&gt;currentDelegate&gt;"/>
+<entry id="8388829" method="true" symbol="onComplete"/>
+<entry id="14" module="true" symbol="Layouts"/>
+<entry id="7" object="true" symbol="MusicControlDelegate"/>
+<entry id="8391224" method="true" symbol="setDelegate"/>
+<entry field="true" id="12" symbol="&lt;globals/MusicControlDelegate/&lt;&gt;isVolumeMode&gt;"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435620" name="command" stackId="1" startPc="268435557"/>
+<entry endPc="268435619" name="message" stackId="2" startPc="268435561"/>
+<entry arg="true" endPc="268435766" name="evt" stackId="1" startPc="268435621"/>
+<entry endPc="268435760" name="pressDuration" stackId="3" startPc="268435662"/>
+<entry arg="true" endPc="268436033" name="evt" stackId="1" startPc="268435845"/>
+<entry arg="true" endPc="268436335" name="dc" stackId="1" startPc="268436034"/>
+<entry arg="true" endPc="268436335" name="x" stackId="2" startPc="268436034"/>
+<entry arg="true" endPc="268436335" name="y" stackId="3" startPc="268436034"/>
+<entry arg="true" endPc="268436335" name="size" stackId="4" startPc="268436034"/>
+<entry arg="true" endPc="268436335" name="reversed" stackId="5" startPc="268436034"/>
+<entry endPc="268436334" name="points" stackId="6" startPc="268436038"/>
+<entry arg="true" endPc="268436390" name="dc" stackId="1" startPc="268436336"/>
+<entry arg="true" endPc="268436390" name="x" stackId="2" startPc="268436336"/>
+<entry arg="true" endPc="268436390" name="y" stackId="3" startPc="268436336"/>
+<entry arg="true" endPc="268436390" name="size" stackId="4" startPc="268436336"/>
+<entry arg="true" endPc="268437104" name="dc" stackId="1" startPc="268436412"/>
+<entry endPc="268437103" name="w" stackId="2" startPc="268436416"/>
+<entry endPc="268437103" name="h" stackId="3" startPc="268436416"/>
+<entry endPc="268437103" name="app" stackId="4" startPc="268436416"/>
+<entry endPc="268437103" name="delegate" stackId="5" startPc="268436416"/>
+<entry endPc="268437103" name="mode" stackId="6" startPc="268436416"/>
+<entry endPc="268437103" name="modeText" stackId="7" startPc="268436416"/>
+<entry arg="true" endPc="268437218" name="delegate" stackId="1" startPc="268437206"/>
+<entry arg="true" endPc="268437416" name="dc" stackId="1" startPc="268437219"/>
+</localVars>
+<deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3888-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="63" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/MusicControlDelegate" offset="142" parentId="globals" symbolId="MusicControlDelegate" type="class"/>
+<dataEntry label="globals/Rez" offset="237" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/CommListener" offset="292" parentId="globals" symbolId="CommListener" type="class"/>
+<dataEntry label="globals/MusicControlView" offset="355" parentId="globals" symbolId="MusicControlView" type="class"/>
+<dataEntry label="globals/QuickMusicControlsApp" offset="426" parentId="globals" symbolId="QuickMusicControlsApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="513" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="560" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="599" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435475" name="&lt;init&gt;" parent="MusicControlDelegate" startPc="268435457">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435499" name="&lt;init&gt;" parent="Rez" startPc="268435476">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435518" name="&lt;init&gt;" parent="CommListener" startPc="268435500">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435537" name="&lt;init&gt;" parent="MusicControlView" startPc="268435519">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435556" name="&lt;init&gt;" parent="QuickMusicControlsApp" startPc="268435538">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435620" name="sendToMobile" parent="MusicControlDelegate" startPc="268435557">
+<param id="command"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435766" name="onKeyReleased" parent="MusicControlDelegate" startPc="268435621">
+<param id="evt"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435833" name="initialize" parent="MusicControlDelegate" startPc="268435767">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435844" name="getMode" parent="MusicControlDelegate" startPc="268435834">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436033" name="onKeyPressed" parent="MusicControlDelegate" startPc="268435845">
+<param id="evt"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onError" parent="CommListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onComplete" parent="CommListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CommListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436335" name="drawPlayIcon" parent="MusicControlView" startPc="268436034">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="size"/>
+<param id="reversed"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436390" name="drawPauseIcon" parent="MusicControlView" startPc="268436336">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="size"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436411" name="initialize" parent="MusicControlView" startPc="268436391">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437104" name="onUpdate" parent="MusicControlView" startPc="268436412">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437173" name="getInitialView" parent="QuickMusicControlsApp" startPc="268437105">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMessage" parent="QuickMusicControlsApp">
+<param id="msg"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437194" name="initialize" parent="QuickMusicControlsApp" startPc="268437174">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437205" name="getDelegate" parent="QuickMusicControlsApp" startPc="268437195">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437218" name="setDelegate" parent="QuickMusicControlsApp" startPc="268437206">
+<param id="delegate"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437416" name="MainLayout" parent="Layouts" startPc="268437219">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

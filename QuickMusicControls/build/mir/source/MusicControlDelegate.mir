@@ -1,0 +1,398 @@
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Application,2,13,24]; @symbol_usingAlias = [App,2,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Communications,3,13,27]; @symbol_usingAlias = [Comm,3,31,35]; ]
+using Toybox.Communications as :Comm;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [System,4,13,19]; @symbol_usingAlias = [Sys,4,23,26]; ]
+using Toybox.System as :Sys;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Lang,5,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 7; @symbol_classdef = [MusicControlDelegate,7,6,26]; @symbol_extends<0> = [Ui,7,35,37]; @symbol_extends<1> = [InputDelegate,7,38,51]; ]
+class MusicControlDelegate extends Ui.InputDelegate {
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 9; @position = 16; @symbol_vardef = [isVolumeMode,9,16,28]; ]
+    private
+    var isVolumeMode = false;
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 10; @position = 16; @symbol_vardef = [gpsPressStartTime,10,16,33]; @symbol_type<0> = [Number,10,37,43]; ]
+    private
+    var gpsPressStartTime as Number or Null = null;
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 12; @position = 18; @symbol_constdef = [LONG_PRESS_THRESHOLD,12,18,38]; ]
+    private
+    const LONG_PRESS_THRESHOLD = 400;
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 14; @symbol_functiondef = [initialize,14,13,23]; ]
+    function initialize() as Void {
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_14_26_21_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 15 8 ]
+        symbol [ InputDelegate %tmp.2 15 8 21 ];
+        %tmp.2 = getv ? :InputDelegate;
+        symbol [ initialize %tmp.3 15 22 32 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 17 8 ]
+        %tmp.4 = false;
+        symbol [ isVolumeMode ? 17 8 20 ];
+        putv self :isVolumeMode %tmp.4;
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 18 8 ]
+        %tmp.5 = null;
+        symbol [ gpsPressStartTime ? 18 8 25 ];
+        putv self :gpsPressStartTime %tmp.5;
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 20 8 ]
+        symbol [ App %tmp.6 20 9 12 ];
+        %tmp.6 = getm $.Toybox.Application;
+        symbol [ getApp %tmp.7 20 13 19 ];
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = as %tmp.8 QuickMusicControlsApp;
+        symbol [ QuickMusicControlsApp %tmp.9 20 25 46 ];
+        symbol [ setDelegate %tmp.10 20 48 59 ];
+        %tmp.10 = getv function %tmp.9 :setDelegate;
+        %tmp.11 = self;
+        symbol [ self %tmp.11 20 60 64 ];
+        invoke %tmp.9 %tmp.10(%tmp.11);
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_14_26_21_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 23; @symbol_functiondef = [getMode,23,13,20]; @symbol_return<0> = [Boolean,23,26,33]; ]
+    function getMode() as Boolean {
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_23_34_25_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 24 8 ]
+        symbol [ isVolumeMode %tmp.2 24 15 27 ];
+        %tmp.2 = getv ? :isVolumeMode;
+        ret %tmp.2;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_23_34_25_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 27; @symbol_functiondef = [onKeyPressed,27,13,25]; @symbol_param<0> = [evt,27,26,29]; @symbol_param<0>_type<0> = [Ui,27,33,35]; @symbol_param<0>_type<1> = [KeyEvent,27,36,44]; @symbol_return<0> = [Boolean,27,49,56]; ]
+    function onKeyPressed(evt as Ui.KeyEvent) as Boolean {
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_27_57_65_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 28 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_27_57_65_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_27_57_65_4_stop" ]
+        %key.1 = local;
+        symbol [ key %key.1 28 12 15 ];
+        %tmp.1 = lgetv %evt;
+        symbol [ evt %tmp.1 28 18 21 ];
+        symbol [ getKey %tmp.2 28 22 28 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %key.1 %tmp.3;
+        symbol [ key %key.1 28 12 15 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 29 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_27_57_65_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_27_57_65_4_stop" ]
+        %action.2 = local;
+        symbol [ action %action.2 29 12 18 ];
+        %tmp.4 = null;
+        lputv %action.2 %tmp.4;
+        symbol [ action %action.2 29 12 18 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 33 8 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_8_39_8_if_stmt:
+        %tmp.5 = lgetv %key.1;
+        symbol [ key %tmp.5 33 12 15 ];
+        symbol [ Ui %tmp.6 33 19 21 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.7 33 22 31 ];
+        %tmp.7 = getv %tmp.6 :KEY_ENTER;
+        %tmp.8 = eq %tmp.5 %tmp.7;
+        bf %tmp.8 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_8_39_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_8_39_8_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_33_39_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 34 12 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_12_36_12_if_stmt:
+        symbol [ gpsPressStartTime %tmp.10 34 16 33 ];
+        %tmp.10 = getv ? :gpsPressStartTime;
+        %tmp.11 = null;
+        %tmp.12 = eq %tmp.10 %tmp.11;
+        bf %tmp.12 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_12_36_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_12_36_12_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_43_36_12_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 35 16 ]
+        symbol [ Sys %tmp.13 35 36 39 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.14 35 40 48 ];
+        %tmp.14 = getv function %tmp.13 :getTimer;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ gpsPressStartTime ? 35 16 33 ];
+        putv self :gpsPressStartTime %tmp.15;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_43_36_12_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_12_36_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_34_12_36_12_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 38 12 ]
+        %tmp.16 = true;
+        ret %tmp.16;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_33_39_8_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_8_39_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_33_8_39_8_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 41 8 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_8_56_8_if_stmt:
+        symbol [ isVolumeMode %tmp.18 41 13 25 ];
+        %tmp.18 = getv ? :isVolumeMode;
+        %tmp.19 = not %tmp.18;
+        bf %tmp.19 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_8_56_8_if_else_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_8_56_8_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_27_49_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 43 12 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_12_47_12_if_stmt:
+        %tmp.20 = lgetv %key.1;
+        symbol [ key %tmp.20 43 16 19 ];
+        symbol [ Ui %tmp.21 43 23 25 ];
+        %tmp.21 = getm $.Toybox.WatchUi;
+        symbol [ KEY_UP %tmp.22 43 26 32 ];
+        %tmp.22 = getv %tmp.21 :KEY_UP;
+        %tmp.23 = eq %tmp.20 %tmp.22;
+        bf %tmp.23 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_12_47_12_if_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_12_47_12_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_34_45_12_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 44 16 ]
+        %tmp.24 = "NEXT_TRACK";
+        lputv %action.2 %tmp.24;
+        symbol [ action %action.2 44 16 22 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_34_45_12_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_12_47_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_12_47_12_if_false:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 45 19 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_19_47_12_if_stmt:
+        %tmp.25 = lgetv %key.1;
+        symbol [ key %tmp.25 45 23 26 ];
+        symbol [ Ui %tmp.26 45 30 32 ];
+        %tmp.26 = getm $.Toybox.WatchUi;
+        symbol [ KEY_DOWN %tmp.27 45 33 41 ];
+        %tmp.27 = getv %tmp.26 :KEY_DOWN;
+        %tmp.28 = eq %tmp.25 %tmp.27;
+        bf %tmp.28 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_19_47_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_19_47_12_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_43_47_12_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 46 16 ]
+        %tmp.29 = "PREV_TRACK";
+        lputv %action.2 %tmp.29;
+        symbol [ action %action.2 46 16 22 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_43_47_12_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_19_47_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_45_19_47_12_if_end:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_43_12_47_12_if_end:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_27_49_8_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_8_56_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_8_56_8_if_else_false:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_49_15_56_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 51 12 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_12_55_12_if_stmt:
+        %tmp.30 = lgetv %key.1;
+        symbol [ key %tmp.30 51 16 19 ];
+        symbol [ Ui %tmp.31 51 23 25 ];
+        %tmp.31 = getm $.Toybox.WatchUi;
+        symbol [ KEY_UP %tmp.32 51 26 32 ];
+        %tmp.32 = getv %tmp.31 :KEY_UP;
+        %tmp.33 = eq %tmp.30 %tmp.32;
+        bf %tmp.33 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_12_55_12_if_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_12_55_12_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_34_53_12_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 52 16 ]
+        %tmp.34 = "VOLUME_UP";
+        lputv %action.2 %tmp.34;
+        symbol [ action %action.2 52 16 22 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_34_53_12_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_12_55_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_12_55_12_if_false:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 53 19 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_19_55_12_if_stmt:
+        %tmp.35 = lgetv %key.1;
+        symbol [ key %tmp.35 53 23 26 ];
+        symbol [ Ui %tmp.36 53 30 32 ];
+        %tmp.36 = getm $.Toybox.WatchUi;
+        symbol [ KEY_DOWN %tmp.37 53 33 41 ];
+        %tmp.37 = getv %tmp.36 :KEY_DOWN;
+        %tmp.38 = eq %tmp.35 %tmp.37;
+        bf %tmp.38 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_19_55_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_19_55_12_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_43_55_12_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 54 16 ]
+        %tmp.39 = "VOLUME_DOWN";
+        lputv %action.2 %tmp.39;
+        symbol [ action %action.2 54 16 22 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_43_55_12_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_19_55_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_53_19_55_12_if_end:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_51_12_55_12_if_end:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_49_15_56_8_stop:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_41_8_56_8_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 58 8 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_8_62_8_if_stmt:
+        %tmp.40 = lgetv %action.2;
+        symbol [ action %tmp.40 58 12 18 ];
+        %tmp.41 = null;
+        %tmp.42 = ne %tmp.40 %tmp.41;
+        bf %tmp.42 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_8_62_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_8_62_8_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_28_62_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 59 12 ]
+        %tmp.43 = self;
+        symbol [ sendToMobile %tmp.44 59 12 24 ];
+        %tmp.44 = getv function %tmp.43 :sendToMobile;
+        %tmp.45 = lgetv %action.2;
+        symbol [ action %tmp.45 59 25 31 ];
+        %tmp.46 = as %tmp.45 { (!Null) };
+        invoke %tmp.43 %tmp.44(%tmp.46);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 61 12 ]
+        %tmp.47 = true;
+        ret %tmp.47;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_28_62_8_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_8_62_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_58_8_62_8_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 64 8 ]
+        %tmp.48 = false;
+        ret %tmp.48;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_27_57_65_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 67; @symbol_functiondef = [onKeyReleased,67,13,26]; @symbol_param<0> = [evt,67,27,30]; @symbol_param<0>_type<0> = [Ui,67,34,36]; @symbol_param<0>_type<1> = [KeyEvent,67,37,45]; @symbol_return<0> = [Boolean,67,50,57]; ]
+    function onKeyReleased(evt as Ui.KeyEvent) as Boolean {
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_67_58_89_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 68 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_67_58_89_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_67_58_89_4_stop" ]
+        %key.1 = local;
+        symbol [ key %key.1 68 12 15 ];
+        %tmp.1 = lgetv %evt;
+        symbol [ evt %tmp.1 68 18 21 ];
+        symbol [ getKey %tmp.2 68 22 28 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %key.1 %tmp.3;
+        symbol [ key %key.1 68 12 15 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 70 8 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_8_87_8_if_stmt:
+        %tmp.4 = lgetv %key.1;
+        symbol [ key %tmp.4 70 12 15 ];
+        symbol [ Ui %tmp.5 70 19 21 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.6 70 22 31 ];
+        %tmp.6 = getv %tmp.5 :KEY_ENTER;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_8_87_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_8_87_8_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_33_87_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 71 12 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_12_85_12_if_stmt:
+        symbol [ gpsPressStartTime %tmp.9 71 16 33 ];
+        %tmp.9 = getv ? :gpsPressStartTime;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        bf %tmp.11 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_12_85_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_12_85_12_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_43_85_12_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 72 16 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_43_85_12_start" "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_43_85_12_stop" ]
+        %pressDuration.2 = local;
+        symbol [ pressDuration %pressDuration.2 72 20 33 ];
+        symbol [ Sys %tmp.12 72 36 39 ];
+        %tmp.12 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.13 72 40 48 ];
+        %tmp.13 = getv function %tmp.12 :getTimer;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        symbol [ gpsPressStartTime %tmp.16 72 53 70 ];
+        %tmp.16 = getv ? :gpsPressStartTime;
+        %tmp.17 = sub %tmp.14 %tmp.16;
+        lputv %pressDuration.2 %tmp.17;
+        symbol [ pressDuration %pressDuration.2 72 20 33 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 73 16 ]
+        %tmp.18 = null;
+        symbol [ gpsPressStartTime ? 73 16 33 ];
+        putv self :gpsPressStartTime %tmp.18;
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 75 16 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_16_84_16_if_stmt:
+        %tmp.19 = lgetv %pressDuration.2;
+        symbol [ pressDuration %tmp.19 75 20 33 ];
+        symbol [ LONG_PRESS_THRESHOLD %tmp.21 75 37 57 ];
+        %tmp.21 = getv ? :LONG_PRESS_THRESHOLD;
+        %tmp.22 = gte %tmp.19 %tmp.21;
+        bf %tmp.22 @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_16_84_16_if_else_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_16_84_16_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_59_81_16_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 77 20 ]
+        symbol [ isVolumeMode %tmp.24 77 36 48 ];
+        %tmp.24 = getv ? :isVolumeMode;
+        %tmp.25 = not %tmp.24;
+        symbol [ isVolumeMode ? 77 20 32 ];
+        putv self :isVolumeMode %tmp.25;
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 80 20 ]
+        symbol [ Ui %tmp.26 80 20 22 ];
+        %tmp.26 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.27 80 23 36 ];
+        %tmp.27 = getv function %tmp.26 :requestUpdate;
+        invoke %tmp.26 %tmp.27();
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_59_81_16_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_16_84_16_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_16_84_16_if_else_false:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_81_23_84_16_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 82 20 ]
+        %tmp.28 = self;
+        symbol [ sendToMobile %tmp.29 82 20 32 ];
+        %tmp.29 = getv function %tmp.28 :sendToMobile;
+        %tmp.30 = "PLAY_PAUSE";
+        invoke %tmp.28 %tmp.29(%tmp.30);
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_81_23_84_16_stop:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_75_16_84_16_if_end:
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_43_85_12_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_12_85_12_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_71_12_85_12_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 86 12 ]
+        %tmp.31 = true;
+        ret %tmp.31;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_33_87_8_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_8_87_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_70_8_87_8_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 88 8 ]
+        %tmp.32 = false;
+        ret %tmp.32;
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_67_58_89_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 91; @symbol_functiondef = [sendToMobile,91,13,25]; @symbol_param<0> = [command,91,26,33]; @symbol_param<0>_type<0> = [String,91,37,43]; ]
+    function sendToMobile(command as String) as Void {
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_91_53_94_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 92 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_91_53_94_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_91_53_94_4_stop" ]
+        %message.1 = local;
+        symbol [ message %message.1 92 12 19 ];
+        %tmp.1 = newd 1;
+        %tmp.2 = "COMMAND";
+        %tmp.3 = lgetv %command;
+        symbol [ command %tmp.3 92 37 44 ];
+        %tmp.4 = dup %tmp.1;
+        %tmp.5 = aputv %tmp.4 %tmp.2 %tmp.3;
+        lputv %message.1 %tmp.5;
+        symbol [ message %message.1 92 12 19 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc" 93 8 ]
+        symbol [ Comm %tmp.6 93 8 12 ];
+        %tmp.6 = getm $.Toybox.Communications;
+        symbol [ transmit %tmp.7 93 13 21 ];
+        %tmp.7 = getv function %tmp.6 :transmit;
+        %tmp.8 = lgetv %message.1;
+        symbol [ message %tmp.8 93 22 29 ];
+        %tmp.9 = null;
+        symbol [ CommListener %tmp.13 93 41 53 ];
+        %tmp.13 = getv ? :CommListener;
+        %tmp.10 = newc %tmp.13 ();
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9, %tmp.10);
+C__devel_garmin_QuickMusicControls_source_MusicControlDelegate_mc_91_53_94_4_stop:
+    }
+}
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 98; @symbol_classdef = [CommListener,98,6,18]; @symbol_extends<0> = [Comm,98,27,31]; @symbol_extends<1> = [ConnectionListener,98,32,50]; ]
+class CommListener extends Comm.ConnectionListener {
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 98; ]
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 98; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 99; @symbol_functiondef = [onComplete,99,13,23]; ]
+    function onComplete() as Void {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 104; @symbol_functiondef = [onError,104,13,20]; ]
+    function onError() as Void {
+    }
+}
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlDelegate.mc"; @line = 1; ]
+<init> {
+}

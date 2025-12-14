@@ -1,0 +1,579 @@
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [Gfx,2,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Application,3,13,24]; @symbol_usingAlias = [App,3,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 5; @symbol_classdef = [MusicControlView,5,6,22]; @symbol_extends<0> = [Ui,5,31,33]; @symbol_extends<1> = [View,5,34,38]; ]
+class MusicControlView extends Ui.View {
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_7_26_9_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 8 8 ]
+        symbol [ View %tmp.2 8 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 8 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 11; @symbol_functiondef = [onUpdate,11,13,21]; @symbol_param<0> = [dc,11,22,24]; @symbol_param<0>_type<0> = [Gfx,11,28,31]; @symbol_param<0>_type<1> = [Dc,11,32,34]; ]
+    function onUpdate(dc as Gfx.Dc) as Void {
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 12 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 12 8 10 ];
+        symbol [ setColor %tmp.2 12 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Gfx %tmp.3 12 20 23 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 12 24 35 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Gfx %tmp.5 12 37 40 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 12 41 52 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 13 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 13 8 10 ];
+        symbol [ clear %tmp.8 13 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 14 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 14 8 10 ];
+        symbol [ setColor %tmp.10 14 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Gfx %tmp.11 14 20 23 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.12 14 24 35 ];
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        symbol [ Gfx %tmp.13 14 37 40 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 14 41 58 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 16 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 16 12 13 ];
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 16 16 18 ];
+        symbol [ getWidth %tmp.16 16 19 27 ];
+        %tmp.16 = getv function %tmp.15 :getWidth;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %w.1 %tmp.17;
+        symbol [ w %w.1 16 12 13 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 17 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop" ]
+        %h.2 = local;
+        symbol [ h %h.2 17 12 13 ];
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 17 16 18 ];
+        symbol [ getHeight %tmp.19 17 19 28 ];
+        %tmp.19 = getv function %tmp.18 :getHeight;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %h.2 %tmp.20;
+        symbol [ h %h.2 17 12 13 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 19 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop" ]
+        %app.3 = local;
+        symbol [ app %app.3 19 12 15 ];
+        symbol [ App %tmp.21 19 18 21 ];
+        %tmp.21 = getm $.Toybox.Application;
+        symbol [ getApp %tmp.22 19 22 28 ];
+        %tmp.22 = getv function %tmp.21 :getApp;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = as %tmp.23 QuickMusicControlsApp;
+        symbol [ QuickMusicControlsApp %tmp.24 19 34 55 ];
+        lputv %app.3 %tmp.24;
+        symbol [ app %app.3 19 12 15 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 20 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop" ]
+        %delegate.4 = local;
+        symbol [ delegate %delegate.4 20 12 20 ];
+        %tmp.25 = lgetv %app.3;
+        symbol [ app %tmp.25 20 23 26 ];
+        symbol [ getDelegate %tmp.26 20 27 38 ];
+        %tmp.26 = getv function %tmp.25 :getDelegate;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        lputv %delegate.4 %tmp.27;
+        symbol [ delegate %delegate.4 20 12 20 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 21 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop" ]
+        %mode.5 = local;
+        symbol [ mode %mode.5 21 12 16 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_begin:
+        %tmp.28 = lgetv %delegate.4;
+        symbol [ delegate %tmp.28 21 19 27 ];
+        %tmp.29 = null;
+        %tmp.30 = ne %tmp.28 %tmp.29;
+        bf %tmp.30 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_else_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_true:
+        %tmp.31 = lgetv %delegate.4;
+        symbol [ delegate %tmp.31 21 38 46 ];
+        %tmp.32 = as %tmp.31 { (!Null) };
+        symbol [ getMode %tmp.33 21 47 54 ];
+        %tmp.33 = getv function %tmp.32 :getMode;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        push %tmp.34;
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_else_false:
+        %tmp.35 = false;
+        push %tmp.35;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_end:
+        %tmp.36 = phi [%tmp.30 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_begin] [%tmp.34 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_true] [%tmp.35 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_else_false] [%tmp.36 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_21_19_21_59_end];
+        lputv %mode.5 %tmp.36;
+        symbol [ mode %mode.5 21 12 16 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 24 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop" ]
+        %modeText.6 = local;
+        symbol [ modeText %modeText.6 24 12 20 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_begin:
+        %tmp.37 = lgetv %mode.5;
+        symbol [ mode %tmp.37 24 23 27 ];
+        bf %tmp.37 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_else_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_true:
+        %tmp.38 = "VOLUME";
+        push %tmp.38;
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_else_false:
+        %tmp.39 = "SKIP";
+        push %tmp.39;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_end:
+        %tmp.40 = phi [%tmp.37 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_begin] [%tmp.38 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_true] [%tmp.39 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_else_false] [%tmp.40 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_24_23_24_41_end];
+        lputv %modeText.6 %tmp.40;
+        symbol [ modeText %modeText.6 24 12 20 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 25 8 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 25 8 10 ];
+        symbol [ drawText %tmp.42 25 11 19 ];
+        %tmp.42 = getv function %tmp.41 :drawText;
+        %tmp.43 = 30;
+        %tmp.44 = 5;
+        symbol [ Gfx %tmp.45 25 27 30 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.46 25 31 40 ];
+        %tmp.46 = getv %tmp.45 :FONT_TINY;
+        %tmp.47 = "Mode: ";
+        symbol [ Gfx %tmp.48 25 52 55 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.49 25 56 73 ];
+        %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.41 %tmp.42(%tmp.43, %tmp.44, %tmp.46, %tmp.47, %tmp.49);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 26 8 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 26 8 10 ];
+        symbol [ drawText %tmp.51 26 11 19 ];
+        %tmp.51 = getv function %tmp.50 :drawText;
+        %tmp.52 = 30;
+        %tmp.53 = 25;
+        symbol [ Gfx %tmp.54 26 28 31 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.55 26 32 42 ];
+        %tmp.55 = getv %tmp.54 :FONT_SMALL;
+        %tmp.56 = lgetv %modeText.6;
+        symbol [ modeText %tmp.56 26 44 52 ];
+        symbol [ Gfx %tmp.57 26 54 57 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.58 26 58 75 ];
+        %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.53, %tmp.55, %tmp.56, %tmp.58);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 29 8 ]
+        %tmp.59 = self;
+        symbol [ drawPlayIcon %tmp.60 29 8 20 ];
+        %tmp.60 = getv function %tmp.59 :drawPlayIcon;
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 29 21 23 ];
+        %tmp.62 = lgetv %w.1;
+        symbol [ w %tmp.62 29 25 26 ];
+        %tmp.63 = 27;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        %tmp.65 = 10;
+        %tmp.66 = 16;
+        %tmp.67 = false;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.64, %tmp.65, %tmp.66, %tmp.67);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 30 8 ]
+        %tmp.68 = self;
+        symbol [ drawPauseIcon %tmp.69 30 8 21 ];
+        %tmp.69 = getv function %tmp.68 :drawPauseIcon;
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 30 22 24 ];
+        %tmp.71 = lgetv %w.1;
+        symbol [ w %tmp.71 30 26 27 ];
+        %tmp.72 = 48;
+        %tmp.73 = sub %tmp.71 %tmp.72;
+        %tmp.74 = 33;
+        %tmp.75 = 16;
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.73, %tmp.74, %tmp.75);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 31 8 ]
+        %tmp.76 = lgetv %dc;
+        symbol [ dc %tmp.76 31 8 10 ];
+        symbol [ drawLine %tmp.77 31 11 19 ];
+        %tmp.77 = getv function %tmp.76 :drawLine;
+        %tmp.78 = lgetv %w.1;
+        symbol [ w %tmp.78 31 20 21 ];
+        %tmp.79 = 60;
+        %tmp.80 = sub %tmp.78 %tmp.79;
+        %tmp.81 = 0;
+        %tmp.82 = lgetv %w.1;
+        symbol [ w %tmp.82 31 31 32 ];
+        %tmp.83 = 60;
+        invoke %tmp.76 %tmp.77(%tmp.80, %tmp.81, %tmp.82, %tmp.83);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 34 8 ]
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 34 8 10 ];
+        symbol [ drawLine %tmp.85 34 11 19 ];
+        %tmp.85 = getv function %tmp.84 :drawLine;
+        %tmp.86 = 5;
+        %tmp.87 = 27;
+        %tmp.88 = lgetv %w.1;
+        symbol [ w %tmp.88 34 27 28 ];
+        %tmp.89 = 70;
+        %tmp.90 = sub %tmp.88 %tmp.89;
+        %tmp.91 = 27;
+        invoke %tmp.84 %tmp.85(%tmp.86, %tmp.87, %tmp.90, %tmp.91);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 44 8 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_8_56_8_if_stmt:
+        %tmp.92 = lgetv %mode.5;
+        symbol [ mode %tmp.92 44 13 17 ];
+        %tmp.93 = not %tmp.92;
+        bf %tmp.93 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_8_56_8_if_else_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_8_56_8_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_19_52_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 46 12 ]
+        %tmp.94 = lgetv %dc;
+        symbol [ dc %tmp.94 46 12 14 ];
+        symbol [ drawText %tmp.95 46 15 23 ];
+        %tmp.95 = getv function %tmp.94 :drawText;
+        %tmp.96 = 10;
+        %tmp.97 = lgetv %h.2;
+        symbol [ h %tmp.97 46 28 29 ];
+        %tmp.98 = 2;
+        %tmp.99 = div %tmp.97 %tmp.98;
+        %tmp.100 = 12;
+        %tmp.101 = sub %tmp.99 %tmp.100;
+        symbol [ Gfx %tmp.102 46 40 43 ];
+        %tmp.102 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.103 46 44 53 ];
+        %tmp.103 = getv %tmp.102 :FONT_TINY;
+        %tmp.104 = "Next track";
+        symbol [ Gfx %tmp.105 46 69 72 ];
+        %tmp.105 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.106 46 73 90 ];
+        %tmp.106 = getv %tmp.105 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.94 %tmp.95(%tmp.96, %tmp.101, %tmp.103, %tmp.104, %tmp.106);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 47 12 ]
+        %tmp.107 = self;
+        symbol [ drawPlayIcon %tmp.108 47 12 24 ];
+        %tmp.108 = getv function %tmp.107 :drawPlayIcon;
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 47 25 27 ];
+        %tmp.110 = 90;
+        %tmp.111 = lgetv %h.2;
+        symbol [ h %tmp.111 47 33 34 ];
+        %tmp.112 = 2;
+        %tmp.113 = div %tmp.111 %tmp.112;
+        %tmp.114 = 5;
+        %tmp.115 = sub %tmp.113 %tmp.114;
+        %tmp.116 = 10;
+        %tmp.117 = false;
+        invoke %tmp.107 %tmp.108(%tmp.109, %tmp.110, %tmp.115, %tmp.116, %tmp.117);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 48 12 ]
+        %tmp.118 = self;
+        symbol [ drawPlayIcon %tmp.119 48 12 24 ];
+        %tmp.119 = getv function %tmp.118 :drawPlayIcon;
+        %tmp.120 = lgetv %dc;
+        symbol [ dc %tmp.120 48 25 27 ];
+        %tmp.121 = 100;
+        %tmp.122 = lgetv %h.2;
+        symbol [ h %tmp.122 48 34 35 ];
+        %tmp.123 = 2;
+        %tmp.124 = div %tmp.122 %tmp.123;
+        %tmp.125 = 5;
+        %tmp.126 = sub %tmp.124 %tmp.125;
+        %tmp.127 = 10;
+        %tmp.128 = false;
+        invoke %tmp.118 %tmp.119(%tmp.120, %tmp.121, %tmp.126, %tmp.127, %tmp.128);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 49 12 ]
+        %tmp.129 = lgetv %dc;
+        symbol [ dc %tmp.129 49 12 14 ];
+        symbol [ drawText %tmp.130 49 15 23 ];
+        %tmp.130 = getv function %tmp.129 :drawText;
+        %tmp.131 = 10;
+        %tmp.132 = lgetv %h.2;
+        symbol [ h %tmp.132 49 28 29 ];
+        %tmp.133 = 55;
+        %tmp.134 = sub %tmp.132 %tmp.133;
+        symbol [ Gfx %tmp.135 49 36 39 ];
+        %tmp.135 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.136 49 40 49 ];
+        %tmp.136 = getv %tmp.135 :FONT_TINY;
+        %tmp.137 = "Prev track";
+        symbol [ Gfx %tmp.138 49 65 68 ];
+        %tmp.138 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.139 49 69 86 ];
+        %tmp.139 = getv %tmp.138 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.129 %tmp.130(%tmp.131, %tmp.134, %tmp.136, %tmp.137, %tmp.139);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 50 12 ]
+        %tmp.140 = self;
+        symbol [ drawPlayIcon %tmp.141 50 12 24 ];
+        %tmp.141 = getv function %tmp.140 :drawPlayIcon;
+        %tmp.142 = lgetv %dc;
+        symbol [ dc %tmp.142 50 25 27 ];
+        %tmp.143 = 90;
+        %tmp.144 = lgetv %h.2;
+        symbol [ h %tmp.144 50 33 34 ];
+        %tmp.145 = 48;
+        %tmp.146 = sub %tmp.144 %tmp.145;
+        %tmp.147 = 10;
+        %tmp.148 = true;
+        invoke %tmp.140 %tmp.141(%tmp.142, %tmp.143, %tmp.146, %tmp.147, %tmp.148);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 51 12 ]
+        %tmp.149 = self;
+        symbol [ drawPlayIcon %tmp.150 51 12 24 ];
+        %tmp.150 = getv function %tmp.149 :drawPlayIcon;
+        %tmp.151 = lgetv %dc;
+        symbol [ dc %tmp.151 51 25 27 ];
+        %tmp.152 = 100;
+        %tmp.153 = lgetv %h.2;
+        symbol [ h %tmp.153 51 34 35 ];
+        %tmp.154 = 48;
+        %tmp.155 = sub %tmp.153 %tmp.154;
+        %tmp.156 = 10;
+        %tmp.157 = true;
+        invoke %tmp.149 %tmp.150(%tmp.151, %tmp.152, %tmp.155, %tmp.156, %tmp.157);
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_19_52_8_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_8_56_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_8_56_8_if_else_false:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_52_15_56_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 54 12 ]
+        %tmp.158 = lgetv %dc;
+        symbol [ dc %tmp.158 54 12 14 ];
+        symbol [ drawText %tmp.159 54 15 23 ];
+        %tmp.159 = getv function %tmp.158 :drawText;
+        %tmp.160 = 10;
+        %tmp.161 = lgetv %h.2;
+        symbol [ h %tmp.161 54 28 29 ];
+        %tmp.162 = 2;
+        %tmp.163 = div %tmp.161 %tmp.162;
+        %tmp.164 = 12;
+        %tmp.165 = sub %tmp.163 %tmp.164;
+        symbol [ Gfx %tmp.166 54 40 43 ];
+        %tmp.166 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.167 54 44 53 ];
+        %tmp.167 = getv %tmp.166 :FONT_TINY;
+        %tmp.168 = "Volume +";
+        symbol [ Gfx %tmp.169 54 67 70 ];
+        %tmp.169 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.170 54 71 88 ];
+        %tmp.170 = getv %tmp.169 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.158 %tmp.159(%tmp.160, %tmp.165, %tmp.167, %tmp.168, %tmp.170);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 55 12 ]
+        %tmp.171 = lgetv %dc;
+        symbol [ dc %tmp.171 55 12 14 ];
+        symbol [ drawText %tmp.172 55 15 23 ];
+        %tmp.172 = getv function %tmp.171 :drawText;
+        %tmp.173 = 10;
+        %tmp.174 = lgetv %h.2;
+        symbol [ h %tmp.174 55 28 29 ];
+        %tmp.175 = 55;
+        %tmp.176 = sub %tmp.174 %tmp.175;
+        symbol [ Gfx %tmp.177 55 36 39 ];
+        %tmp.177 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.178 55 40 49 ];
+        %tmp.178 = getv %tmp.177 :FONT_TINY;
+        %tmp.179 = "Volume -";
+        symbol [ Gfx %tmp.180 55 63 66 ];
+        %tmp.180 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.181 55 67 84 ];
+        %tmp.181 = getv %tmp.180 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.171 %tmp.172(%tmp.173, %tmp.176, %tmp.178, %tmp.179, %tmp.181);
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_52_15_56_8_stop:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_44_8_56_8_if_end:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_11_44_57_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 59; @symbol_functiondef = [drawPlayIcon,59,13,25]; @symbol_param<0> = [dc,59,26,28]; @symbol_param<1> = [x,59,30,31]; @symbol_param<2> = [y,59,33,34]; @symbol_param<3> = [size,59,36,40]; @symbol_param<4> = [reversed,59,42,50]; ]
+    function drawPlayIcon(dc, x, y, size, reversed) {
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_59_52_76_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 60 8 ]
+        [ "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_59_52_76_4_start" "C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_59_52_76_4_stop" ]
+        %points.1 = local;
+        symbol [ points %points.1 60 12 18 ];
+        %tmp.1 = null;
+        lputv %points.1 %tmp.1;
+        symbol [ points %points.1 60 12 18 ];
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 61 8 ]
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_8_74_8_if_stmt:
+        %tmp.2 = lgetv %reversed;
+        symbol [ reversed %tmp.2 61 13 21 ];
+        %tmp.3 = not %tmp.2;
+        bf %tmp.3 @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_8_74_8_if_else_false;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_8_74_8_if_true:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_23_67_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 62 12 ]
+        %tmp.4 = newa 3;
+        %tmp.5 = newa 2;
+        %tmp.6 = lgetv %x;
+        symbol [ x %tmp.6 63 17 18 ];
+        %tmp.7 = dup %tmp.5;
+        %tmp.8 = aputv %tmp.7 0 %tmp.6;
+        %tmp.9 = lgetv %y;
+        symbol [ y %tmp.9 63 20 21 ];
+        %tmp.10 = dup %tmp.8;
+        %tmp.11 = aputv %tmp.10 1 %tmp.9;
+        %tmp.12 = dup %tmp.4;
+        %tmp.13 = aputv %tmp.12 0 %tmp.11;
+        %tmp.14 = newa 2;
+        %tmp.15 = lgetv %x;
+        symbol [ x %tmp.15 64 17 18 ];
+        %tmp.16 = dup %tmp.14;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.18 = lgetv %y;
+        symbol [ y %tmp.18 64 20 21 ];
+        %tmp.19 = lgetv %size;
+        symbol [ size %tmp.19 64 24 28 ];
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = dup %tmp.17;
+        %tmp.22 = aputv %tmp.21 1 %tmp.20;
+        %tmp.23 = dup %tmp.13;
+        %tmp.24 = aputv %tmp.23 1 %tmp.22;
+        %tmp.25 = newa 2;
+        %tmp.26 = lgetv %x;
+        symbol [ x %tmp.26 65 17 18 ];
+        %tmp.27 = lgetv %size;
+        symbol [ size %tmp.27 65 21 25 ];
+        %tmp.28 = add %tmp.26 %tmp.27;
+        %tmp.29 = 2;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        %tmp.31 = dup %tmp.25;
+        %tmp.32 = aputv %tmp.31 0 %tmp.30;
+        %tmp.33 = lgetv %y;
+        symbol [ y %tmp.33 65 31 32 ];
+        %tmp.34 = lgetv %size;
+        symbol [ size %tmp.34 65 35 39 ];
+        %tmp.35 = 2;
+        %tmp.36 = div %tmp.34 %tmp.35;
+        %tmp.37 = add %tmp.33 %tmp.36;
+        %tmp.38 = dup %tmp.32;
+        %tmp.39 = aputv %tmp.38 1 %tmp.37;
+        %tmp.40 = dup %tmp.24;
+        %tmp.41 = aputv %tmp.40 2 %tmp.39;
+        lputv %points.1 %tmp.41;
+        symbol [ points %points.1 62 12 18 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_23_67_8_stop:
+        goto @C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_8_74_8_if_end;
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_8_74_8_if_else_false:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_68_13_74_8_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 69 12 ]
+        %tmp.42 = newa 3;
+        %tmp.43 = newa 2;
+        %tmp.44 = lgetv %x;
+        symbol [ x %tmp.44 70 17 18 ];
+        %tmp.45 = lgetv %size;
+        symbol [ size %tmp.45 70 21 25 ];
+        %tmp.46 = add %tmp.44 %tmp.45;
+        %tmp.47 = 2;
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        %tmp.49 = dup %tmp.43;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        %tmp.51 = lgetv %y;
+        symbol [ y %tmp.51 70 31 32 ];
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 1 %tmp.51;
+        %tmp.54 = dup %tmp.42;
+        %tmp.55 = aputv %tmp.54 0 %tmp.53;
+        %tmp.56 = newa 2;
+        %tmp.57 = lgetv %x;
+        symbol [ x %tmp.57 71 17 18 ];
+        %tmp.58 = lgetv %size;
+        symbol [ size %tmp.58 71 21 25 ];
+        %tmp.59 = add %tmp.57 %tmp.58;
+        %tmp.60 = 2;
+        %tmp.61 = sub %tmp.59 %tmp.60;
+        %tmp.62 = dup %tmp.56;
+        %tmp.63 = aputv %tmp.62 0 %tmp.61;
+        %tmp.64 = lgetv %y;
+        symbol [ y %tmp.64 71 31 32 ];
+        %tmp.65 = lgetv %size;
+        symbol [ size %tmp.65 71 35 39 ];
+        %tmp.66 = add %tmp.64 %tmp.65;
+        %tmp.67 = dup %tmp.63;
+        %tmp.68 = aputv %tmp.67 1 %tmp.66;
+        %tmp.69 = dup %tmp.55;
+        %tmp.70 = aputv %tmp.69 1 %tmp.68;
+        %tmp.71 = newa 2;
+        %tmp.72 = lgetv %x;
+        symbol [ x %tmp.72 72 17 18 ];
+        %tmp.73 = dup %tmp.71;
+        %tmp.74 = aputv %tmp.73 0 %tmp.72;
+        %tmp.75 = lgetv %y;
+        symbol [ y %tmp.75 72 20 21 ];
+        %tmp.76 = lgetv %size;
+        symbol [ size %tmp.76 72 24 28 ];
+        %tmp.77 = 2;
+        %tmp.78 = div %tmp.76 %tmp.77;
+        %tmp.79 = add %tmp.75 %tmp.78;
+        %tmp.80 = dup %tmp.74;
+        %tmp.81 = aputv %tmp.80 1 %tmp.79;
+        %tmp.82 = dup %tmp.70;
+        %tmp.83 = aputv %tmp.82 2 %tmp.81;
+        lputv %points.1 %tmp.83;
+        symbol [ points %points.1 69 12 18 ];
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_68_13_74_8_stop:
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_61_8_74_8_if_end:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 75 8 ]
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 75 8 10 ];
+        symbol [ fillPolygon %tmp.85 75 11 22 ];
+        %tmp.85 = getv function %tmp.84 :fillPolygon;
+        %tmp.86 = lgetv %points.1;
+        symbol [ points %tmp.86 75 23 29 ];
+        invoke %tmp.84 %tmp.85(%tmp.86);
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_59_52_76_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 78; @symbol_functiondef = [drawPauseIcon,78,13,26]; @symbol_param<0> = [dc,78,27,29]; @symbol_param<1> = [x,78,31,32]; @symbol_param<2> = [y,78,34,35]; @symbol_param<3> = [size,78,37,41]; ]
+    function drawPauseIcon(dc, x, y, size) {
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_78_43_81_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 79 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 79 8 10 ];
+        symbol [ fillRectangle %tmp.2 79 11 24 ];
+        %tmp.2 = getv function %tmp.1 :fillRectangle;
+        %tmp.3 = lgetv %x;
+        symbol [ x %tmp.3 79 25 26 ];
+        %tmp.4 = lgetv %y;
+        symbol [ y %tmp.4 79 28 29 ];
+        %tmp.5 = 5;
+        %tmp.6 = lgetv %size;
+        symbol [ size %tmp.6 79 34 38 ];
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6);
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc" 80 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 80 8 10 ];
+        symbol [ fillRectangle %tmp.8 80 11 24 ];
+        %tmp.8 = getv function %tmp.7 :fillRectangle;
+        %tmp.9 = lgetv %x;
+        symbol [ x %tmp.9 80 25 26 ];
+        %tmp.10 = 10;
+        %tmp.11 = add %tmp.9 %tmp.10;
+        %tmp.12 = lgetv %y;
+        symbol [ y %tmp.12 80 33 34 ];
+        %tmp.13 = 5;
+        %tmp.14 = lgetv %size;
+        symbol [ size %tmp.14 80 39 43 ];
+        invoke %tmp.7 %tmp.8(%tmp.11, %tmp.12, %tmp.13, %tmp.14);
+C__devel_garmin_QuickMusicControls_source_MusicControlView_mc_78_43_81_4_stop:
+    }
+}
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlView.mc"; @line = 1; ]
+<init> {
+}

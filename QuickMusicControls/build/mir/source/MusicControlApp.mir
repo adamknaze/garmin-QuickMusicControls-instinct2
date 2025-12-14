@@ -1,0 +1,71 @@
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Application,1,13,24]; @symbol_usingAlias = [App,1,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; @symbol_usingAlias = [Ui,2,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 4; @symbol_classdef = [QuickMusicControlsApp,4,6,27]; @symbol_extends<0> = [App,4,36,39]; @symbol_extends<1> = [AppBase,4,40,47]; ]
+class QuickMusicControlsApp extends App.AppBase {
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 6; @position = 16; @symbol_vardef = [currentDelegate,6,16,31]; @symbol_type<0> = [MusicControlDelegate,6,35,55]; ]
+    private
+    var currentDelegate as MusicControlDelegate or Null;
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_9_26_11_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc" 10 8 ]
+        symbol [ AppBase %tmp.2 10 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 10 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_9_26_11_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 14; @symbol_functiondef = [getInitialView,14,13,27]; ]
+    function getInitialView() {
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_14_30_17_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc" 16 8 ]
+        %tmp.1 = newa 2;
+        symbol [ MusicControlView %tmp.5 16 21 37 ];
+        %tmp.5 = getv ? :MusicControlView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        symbol [ MusicControlDelegate %tmp.11 16 45 65 ];
+        %tmp.11 = getv ? :MusicControlDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_14_30_17_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 19; @symbol_functiondef = [setDelegate,19,13,24]; @symbol_param<0> = [delegate,19,25,33]; @symbol_param<0>_type<0> = [MusicControlDelegate,19,37,57]; ]
+    function setDelegate(delegate as MusicControlDelegate) as Void {
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_19_67_21_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc" 20 8 ]
+        %tmp.1 = lgetv %delegate;
+        symbol [ delegate %tmp.1 20 26 34 ];
+        symbol [ currentDelegate ? 20 8 23 ];
+        putv self :currentDelegate %tmp.1;
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_19_67_21_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 23; @symbol_functiondef = [getDelegate,23,13,24]; @symbol_return<0> = [MusicControlDelegate,23,30,50]; ]
+    function getDelegate() as MusicControlDelegate or Null {
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_23_59_25_4_start:
+[ "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc" 24 8 ]
+        symbol [ currentDelegate %tmp.2 24 15 30 ];
+        %tmp.2 = getv ? :currentDelegate;
+        ret %tmp.2;
+C__devel_garmin_QuickMusicControls_source_MusicControlApp_mc_23_59_25_4_stop:
+    }
+    [ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 29; @symbol_functiondef = [onMessage,29,13,22]; @symbol_param<0> = [msg,29,23,26]; ]
+    function onMessage(msg) {
+    }
+}
+[ @file = "C:\devel\garmin\QuickMusicControls\source\MusicControlApp.mc"; @line = 1; ]
+<init> {
+}
