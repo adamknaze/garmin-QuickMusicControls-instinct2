@@ -10,6 +10,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.net.toUri
 
 class MainActivity : ComponentActivity() {
 
@@ -34,13 +35,33 @@ class MainActivity : ComponentActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Check permission status whenever the app returns to the foreground
-        if (isNotificationAccessEnabled()) {
-            startCompanionService()
-            finish()
-        } else {
-            Toast.makeText(this, "Please grant Notification Access to control music.", Toast.LENGTH_LONG).show()
+
+        if (!isNotificationAccessEnabled()) {
+            Toast.makeText(this, "Please grant Notification Access.", Toast.LENGTH_LONG).show()
+            return
         }
+
+        if (!isBatteryOptimizationIgnored()) {
+            requestBatteryUnrestricted()
+            return
+        }
+
+        startCompanionService()
+        finish()
+    }
+
+    private fun isBatteryOptimizationIgnored(): Boolean {
+        val powerManager = getSystemService(POWER_SERVICE) as android.os.PowerManager
+        return powerManager.isIgnoringBatteryOptimizations(packageName)
+    }
+
+    private fun requestBatteryUnrestricted() {
+        Toast.makeText(this, "Please set battery to 'No restrictions'.", Toast.LENGTH_LONG).show()
+        val intent = Intent().apply {
+            action = Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+            data = "package:$packageName".toUri()
+        }
+        startActivity(intent)
     }
 
     private fun checkAndRequestBluetoothPermissions() {
